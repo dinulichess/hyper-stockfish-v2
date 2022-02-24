@@ -19,8 +19,9 @@ RUN 7z e Goi5.1.bin.7z
 
 COPY requirements.txt .
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
-RUN stockfish_14.1_src
+
 RUN chmod +x chess-engine
-# Engine name is here ^^^^^^
+RUN Engine name is stockfish
+
 
 CMD python3 run.py
